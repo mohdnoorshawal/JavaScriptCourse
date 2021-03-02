@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Encapsulation Example</title>
+</head>
+
+<body>
+	<h1>Encapsulation</h1>
+	<script>
+		
+		class Employee{
+			setEmployeeDetails(name, age, dis){
+				this.name=name;
+				this.age=age;
+				this.dis=dis;
+			}
+			getEmpage(){
+				return this.age;
+			}
+			getEmpname(){
+				return this.name;
+			}
+			getEmpdis(){
+				return this.dis;
+			}
+		}
+		let emp=new Employee();
+		emp.setEmployeeDetails("John", 25, "IT");
+		document.write(emp.getEmpage());
+		document.write(emp.getEmpname());
+		document.write(emp.getEmpdis());
+	
+	</script>
+	<br>
+	<script>
+		
+		class student{
+			constructor(){
+				var name;
+				var marks;
+			}
+			getname(){
+				return this.name;
+			}
+			setname(name){
+				this.name=name;
+			}
+			getmarks(){
+				return this.marks;
+			}
+			setmarks(marks){
+				if (marks<0 || marks>100){
+					alert("Invalid Marks");
+				}
+				else{
+					this.marks=marks;
+				}
+			}
+			
+		}
+		var std=new student();
+		std.setname("Bob");
+		std.setmarks("90");
+		document.write(std.getname() + " " + std.getmarks());
+	
+	</script>
+	
+</body>
+</html>

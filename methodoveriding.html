@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Method Overiding</title>
+</head>
+
+<body>
+	
+	<script>
+	
+		function multiply(x, y, z){
+			return x*y*z;
+		}
+		function multiply(x, y){
+			return x*y;
+		}
+		var result=multiply(1, 2, 3);
+		document.write(result);
+	
+	</script>
+	
+	<script>
+	
+		var alert=function(message){
+			document.write(message);
+		}
+		alert(" Javascript ");
+		alert("Learning.")
+	
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Validation in JS</title>
+</head>
+
+<body>
+	
+	<script>
+	
+		function validateform(){
+			var x=document.forms["myform"]["fname"].value;
+			if(x==""){
+				alert("name must be filled");
+				return false;
+			}
+		}
+	
+	</script>
+	<form name="myform" onSubmit="return validateform()">
+	Name: <input type="text" name="fname">
+		<input type="submit">
+	
+	</form>
+	<br>
+<hr>
+	<script>
+	
+		function validateform1(){
+			var name=document.myform1.name.value;
+			var pass=document.myform1.password.value;
+			var num=document.myform1.num.value;
+			if(name==null || name==""){
+				alert("Name cant be blank");
+				return flase;
+			}
+			else if(pass.length<8){
+				alert("Password must be at least 8 character long");
+				return false;
+			}
+			else if(isNaN(num)){
+				document.getElementById("numloc").innerHTML="Enter numeric value only";
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+	
+	</script>
+	<form name="myform1" onSubmit="return validateform1()">
+	
+	Full Name : <input type="text" name="name"><br>
+	Password : <input type="password" name="password"><br>
+	Phone Number : <input type="text" name="num"><span id="numloc"></span><br>
+	<input type="submit" value="register">
+	</form>
+</body>
+</html>

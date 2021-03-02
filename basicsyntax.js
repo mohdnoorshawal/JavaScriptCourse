@@ -1,0 +1,1 @@
+document.write("Hi we are learning JS, Hello I am a student");

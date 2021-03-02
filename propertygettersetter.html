@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Property Getters and Setters</title>
+</head>
+
+<body>
+	<p id="demo"></p>
+	<script>
+	
+		var person={
+			firstname: "John",
+			lastname: "Dennis",
+			language: "Eng",
+			//get lang(){
+
+				//return this.language;
+			//}
+			set lang(value){
+				this.language=value;
+			}
+		};
+		person.lang="Malayalam";
+		document.getElementById("demo").innerHTML=person.language;
+	
+	</script>
+	
+</body>
+</html>

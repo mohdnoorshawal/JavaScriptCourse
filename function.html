@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Function in JS</title>
+	
+	<script>
+	
+		function hello(){
+			
+			//alert("javascript");
+			document.write("javascript");
+			
+		}
+		
+		function abc(num1, num2){
+			var total=num1+num2;
+			document.write(total);
+		}
+		
+		abc(10, 50);
+		document.write("<br>");
+		abc(-60, 100);
+		document.write("<br>");
+		
+		function names(f_name, l_name){
+			document.write(f_name+" "+l_name);
+		}
+		
+			names("bob", "kent");
+			document.write("<br>");
+			names("bob");
+		
+	</script>
+	
+</head>
+
+<body>
+	
+	<p>This is function</p>
+	
+	<form>
+	<input type="button" onClick="hello()" value="click me">
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Generator Throw</title>
+</head>
+
+<body>
+	
+	<script>
+	
+		function* gen(){
+			try{
+				let result=yield "2*2=";
+				alert("The execution does not reach here because the exception is thrown");
+			}
+			catch(e){
+				alert(e);
+			}
+		}
+		let generator=gen();
+		let question=generator.next().value;
+		
+		generator.throw(new Error("This answer is not found in my record"));
+		
+	
+	</script>
+	
+</body>
+</html>
